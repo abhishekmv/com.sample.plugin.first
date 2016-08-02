@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_RqJKQFjYEeaJpt7ZzLofDA">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_Kz09QFjZEeaJpt7ZzLofDA" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_oCM78FjZEeaJpt7ZzLofDA" elementId="com.sample.plugin.first.command.sample" commandName="Sample"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_xA8YkFjZEeaJpt7ZzLofDA" featurename="handlers" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Handler" xmi:id="_0yqWsFjZEeaJpt7ZzLofDA" elementId="com.sample.plugin.first.handler.sample" contributionURI="bundleclass://com.sample.plugin.first/com.sample.plugin.first.handlers.SampleHandler" command="_oCM78FjZEeaJpt7ZzLofDA"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_kNUfoFjaEeaJpt7ZzLofDA" featurename="menuContributions" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="menu:MenuContribution" xmi:id="_vawocFjaEeaJpt7ZzLofDA" elementId="com.sample.plugin.first.menucontribution.0" positionInParent="after=additions" parentId="org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_hOWXoFjbEeaJpt7ZzLofDA" elementId="com.sample.plugin.first.menu.newMenu" label="e4 sample menu">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_sHrRoFjbEeaJpt7ZzLofDA" elementId="id.e4Sample" label="e4 sample menu" iconURI="platform:/plugin/com.sample.plugin.first/icons/sample.gif" command="_oCM78FjZEeaJpt7ZzLofDA"/>
+      </children>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_NpkT8FjcEeaJpt7ZzLofDA" featurename="trimContributions" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="menu:TrimContribution" xmi:id="_t5FvcFjcEeaJpt7ZzLofDA" elementId="com.sample.plugin.first.trimcontribution.0" parentId="org.eclipse.ui.main.toolbar">
+      <children xsi:type="menu:ToolBar" xmi:id="_XJadEFjdEeaJpt7ZzLofDA" elementId="com.sample.plugin.first.toolbar.0">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_brtjkFjdEeaJpt7ZzLofDA" elementId="com.sample.plugin.first.handledtoolitem.e4Button" label="e4 button"/>
+      </children>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>
